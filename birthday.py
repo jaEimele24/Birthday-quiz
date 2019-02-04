@@ -31,3 +31,17 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+Name=input('What is your Name? ')
+BirthMonth=input('What Month Were you born in? ')
+BirthYear=input('In what year were you born? ')
+BirthDay=int(input('What Day were you born on? '))
+
+if BirthMonth == "October" and BirthDay == 31:
+    print('You Were Born On Haloween')
+if BirthDay==todaydate and BirthMonth==todaymonth:
+    print('Happy Birthday')
+
