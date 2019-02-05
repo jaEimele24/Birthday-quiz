@@ -41,8 +41,10 @@ Birthyear=int(input('And what year were you born in, {0}? '.format(Name)))
 BirthDay=int(input('And the day? '))
 Bearthseason=1
 Birthage=2
+k=0
 if BirthMonth == "October" and BirthDay == 31:
-    print('You Were Born On Haloween')
+    print('You Were Born On Haloween!')
+    k=1
 if BirthDay==todaydate and BirthMonth==todaymonth:
     print('Happy Birthday')
 if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
@@ -65,5 +67,6 @@ randomplatitudes="you are a"
 morepointlesswords="baby of the"
 dumbpunctuation=","
 name=Name,
-print('{0}, {1} {2} {3} {4}.'.format(Name,randomplatitudes,Birthseason,morepointlesswords,Birthage))
+if k==0:
+    print('{0}, {1} {2} {3} {4}.'.format(Name,randomplatitudes,Birthseason,morepointlesswords,Birthage))
 
