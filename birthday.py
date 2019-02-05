@@ -35,13 +35,35 @@ from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
-Name=input('What is your Name? ')
-BirthMonth=input('What Month Were you born in? ')
-BirthYear=input('In what year were you born? ')
-BirthDay=int(input('What Day were you born on? '))
-
+Name=input('Hello, what is your name? ')
+BirthMonth=input('Hi {0}, what was the name of the month you were born in? '.format(Name))
+Birthyear=int(input('And what year were you born in, {0}? '.format(Name)))
+BirthDay=int(input('And the day? '))
+Bearthseason=1
+Birthage=2
 if BirthMonth == "October" and BirthDay == 31:
     print('You Were Born On Haloween')
 if BirthDay==todaydate and BirthMonth==todaymonth:
     print('Happy Birthday')
+if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
+    Birthseason = "winter"
+if BirthMonth == "March" or BirthMonth == "April" or BirthMonth == "May":
+    Birthseason="spring"
+if BirthMonth == "June" or BirthMonth == "July" or BirthMonth == "August":
+    Birthseason = "summer"
+if BirthMonth == "September" or BirthMonth == "October" or BirthMonth == "November":
+    Birthseason = "fall"
+if Birthyear < 1980:
+    Birthage="Stone Age"
+if Birthyear >= 1980 and Birthyear < 1990:
+    Birthage="eighties"
+if Birthyear >= 1990 and Birthyear < 2000:
+    Birthage="nineties"
+if Birthyear >= 2000:
+    Birthage="two thousands"
+randomplatitudes="you are a"
+morepointlesswords="baby of the"
+dumbpunctuation=","
+name=Name,
+print('{0}, {1} {2} {3} {4}.'.format(Name,randomplatitudes,Birthseason,morepointlesswords,Birthage))
 
