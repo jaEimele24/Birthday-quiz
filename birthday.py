@@ -47,7 +47,7 @@ if BirthMonth == "October" and BirthDay == 31:
     k=1
 month = month_name[todaymonth]
 if BirthDay==todaydate and BirthMonth==month:
-    print('Happy Birthday!')
+    print('Happy birthday!')
     k=1
 if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
     Birthseason = "winter"
