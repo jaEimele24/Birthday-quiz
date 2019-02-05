@@ -32,7 +32,6 @@ Example Session
   Eric, you are a fall baby of the stone age.
 """
 from datetime import datetime
-from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
@@ -46,8 +45,9 @@ k=0
 if BirthMonth == "October" and BirthDay == 31:
     print('You Were Born On Haloween!')
     k=1
-if BirthDay==todaydate and BirthMonth==todaymonth:
-    print('Happy Birthday')
+month = month_name[todaymonth]
+if BirthDay==todaydate and BirthMonth==month:
+    print('Happy Birthday!')
     k=1
 if BirthMonth == "December" or BirthMonth == "January" or BirthMonth == "February":
     Birthseason = "winter"
@@ -71,4 +71,6 @@ dumbpunctuation=","
 name=Name,
 if k==0:
     print('{0}, {1} {2} {3} {4}.'.format(Name,randomplatitudes,Birthseason,morepointlesswords,Birthage))
+
+
 
