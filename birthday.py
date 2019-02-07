@@ -43,7 +43,7 @@ Bearthseason=1
 Birthage=2
 k=0
 if BirthMonth == "October" and BirthDay == 31:
-    print('You were born On Halloween!')
+    print('You were born on Halloween!')
     k=1
 month = month_name[todaymonth]
 if BirthDay==todaydate and BirthMonth==month:
